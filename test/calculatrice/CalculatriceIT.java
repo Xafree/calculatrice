@@ -5,47 +5,28 @@
  */
 package calculatrice;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
  * @author xafree
  */
 public class CalculatriceIT {
-  
-    
-    @BeforeAll
-    public static void setUpClass() {
-       
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
-
-    /**
+       /**
      * Test of somme method, of class Calculatrice.
      */
     @Test
     public void testSomme() {
         System.out.println("somme");
-        int a = 3;
+        int a = 2;
         int b = 3;
         Calculatrice instance = new Calculatrice();
-        int expResult = 6;
+        int expResult = 5;
         int result = instance.somme(a, b);
         assertEquals(expResult, result);
     }
@@ -53,7 +34,7 @@ public class CalculatriceIT {
     /**
      * Test of soustraction method, of class Calculatrice.
      */
-    @Test    
+    @Test
     public void testSoustraction() {
         System.out.println("soustraction");
         int a = 10;
@@ -61,8 +42,7 @@ public class CalculatriceIT {
         Calculatrice instance = new Calculatrice();
         int expResult = 5;
         int result = instance.soustraction(a, b);
-        assertEquals(expResult, result,"Correct");
-
+        assertEquals(expResult, result);
     }
 
     /**
@@ -76,7 +56,7 @@ public class CalculatriceIT {
         Calculatrice instance = new Calculatrice();
         int expResult = 5;
         int result = instance.division(diviseur, diviser);
-        assertEquals(expResult, result);    
+        assertEquals(expResult, result);
     }
 
     /**
@@ -91,8 +71,6 @@ public class CalculatriceIT {
         int expResult = 10;
         int result = instance.mutiplication(a, b);
         assertEquals(expResult, result);
-     
-       
     }
     
 }
