@@ -53,7 +53,7 @@ public class CalculatriceIT {
     /**
      * Test of soustraction method, of class Calculatrice.
      */
-    @Test
+    @Test    
     public void testSoustraction() {
         System.out.println("soustraction");
         int a = 10;
