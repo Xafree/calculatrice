@@ -27,7 +27,7 @@ public class CalculatriceIT {
         int b = 3;
         Calculatrice instance = new Calculatrice();
         int expResult = 5;
-        int result = instance.somme(a, b);
+        int result = instance.plus(a, b);
         assertEquals(expResult, result);
     }
 

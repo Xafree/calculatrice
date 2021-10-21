@@ -15,7 +15,7 @@ public class Calculatrice {
     public Calculatrice(){}
     
     
-    public int somme( int a, int b){
+    public int plus( int a, int b){
         return a+b;
     }
     

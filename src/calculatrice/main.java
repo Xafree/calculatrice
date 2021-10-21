@@ -17,7 +17,7 @@ public class main {
      */
     public static void main(String[] args) {
        Calculatrice calculatice = new Calculatrice();
-        System.out.println(calculatice.somme(1,2));
+        System.out.println(calculatice.plus(1,2));
         System.out.println(calculatice.division(2,10));  
     }
     
